@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+body{
+    background: rgba(233, 233, 233, 0.459);
+    /*background: linear-gradient(to right, #56ab2f, #a8e063); */
+    /*background: linear-gradient(to right, #0575e6, #021b79);*/
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transition: all 0.5s ease-out;
+}
+
+
+header svg{
+    position: fixed;
+    top: -30px;
+    left: 1%;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+
+header svg.sticky{
+    background-color: rgb(238, 238, 238);
+}
+
+header svg .ama{
+    fill:white;
+}
+
+header svg:hover{
+    fill: green;
+}
+
+.logo{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    left: 1%;
+    top: 1%;
+    z-index: 1;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+
+nav.sticky{
+    background-color: rgb(238, 238, 238);
+}
+
+
+nav ul{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul .sesion{
+    position: absolute;
+    top: 28px;
+    left: 80%;
+    width: 10%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 125px;
+    height: 30px;
+    border-radius: 35px;
+    position: relative;
+    left: -12%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 155px;
+    height: 30px;
+    border-radius: 35px;
+    position: relative;
+    left: -12%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+/*
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}*/
+
+nav ul li.active a{
+    color: white;
+    background-color: green;
+}
+
+.contenido{
+    width: 100%;
+    height: 750px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.contenido img{
+    position: relative;
+    top: 105px;
+    left: 14%;
+    width: 70%;
+}
+
+/*SECTION*/
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+.productos{
+    margin-top: 200px;
+    width: 100%;
+    height: 1100px;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,310px);
+    text-align: center;
+    
+    justify-items: center;
+    margin-bottom: 150px;
+}
+
+.productos .cont-product{
+    width: 75%;
+    height: 310px;
+    background-color: rgba(238, 238, 238, 0.349);
+    margin-top: 150px;
+    border-radius: 25px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3,100px);
+    transition: all 0.5s ease-out;
+}
+
+.productos .cont-product:hover{
+    background: white;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+}
+
+.quality{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagen{
+    position: relative;
+    top: 10px;
+    left: 5%;
+    width: 90%;
+    height: 160px;
+}
+
+.info-product{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 30px;
+    font-size: auto;
+    background-color: transparent;
+}
+
+.precio{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fa-cart-plus{
+    cursor: pointer;
+    position: relative;
+    left: 25px;
+    padding-top: 10px;
+    width: 60%;
+    height: 50px;
+    border-radius: 15px;
+    border:3px solid green;
+    color: green;
+    font-size: 30px;
+    transition: all 0.5s ease-out;
+}
+
+.fa-cart-plus:hover{
+    background-color: green;
+    color: white;
+}
+
+.productos h4{
+    font-size:45px;
+    position: absolute;
+    left: 32%;
+    color:green;
+}
+
+/*FINAL SECTION*/
+
+.contac{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(233, 233, 233);
+    
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+
+.contac .cont-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px double rgb(180, 180, 180);
+    font-size: 12px;
+}
+
+/*FOOTER*/
+
+img{
+    position: relative;
+    top: 105px;
+    left: 14%;
+    width: 70%;
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+}
+
+.cont-footer{
+    width: 100%;
+    height: 100px;
+}
+
+.cont-footer svg{
+    position: relative;
+    left: 15%;
+}
+
+.cont-footer p{
+    position: relative;
+    left: 20%;
+    bottom: 45%;
+}
+
+.cont-footer h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.cont-footer ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.cont-footer ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.redes{
+    width: 20%;
+    height: 100px;
+    display: block;
+    position: relative;
+    left: 32%;
+    text-align: center;
+}
+
+.fa-facebook,
+.fa-google,
+.fa-instagram{
+    margin-top: 28px;
+    text-decoration:none;
+    color: black;
+    font-size: 35px;
+}
+
+.cont-footer .metodo{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.cont-footer .metodo img{
+    margin-top: 35px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+/*POLITICA*/
+
+.poli{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poli h3{
+    font-size: 20px;
+}
+
+.ico-hor{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border-radius: 25px 0 0 25px;
+    background-color: green;
+    width: 4%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ico-hor .fa-clock{
+    margin-left: 12px;
+    color: white;
+    font-size: 40px;
+}
+
+.horario{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    right: 0;
+    border-radius: 25px 0 0 25px;
+    background-color: green;
+    width: 26%;
+    height: 10px;
+    padding: 25px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.ico-hor:hover ~ .horario{
+    opacity: 1;
+}
+
+.horario h3{
+    margin-left: -10px;
+    font-size: 13px;
+    color: white;
+}
